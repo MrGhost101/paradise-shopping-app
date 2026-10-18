@@ -1,0 +1,22 @@
+.catalog-nav { display: flex; justify-content: space-between; margin-bottom: 30px; }
+.catalog-nav button { border: 0; background: transparent; color: var(--green); font-weight: 700; padding: 8px 0; }
+.catalog-nav .catalog-cart { background: var(--green); color: white; border-radius: 999px; padding: 10px 16px; }
+.catalog-cart span { display: inline-grid; place-items: center; min-width: 21px; height: 21px; margin-left: 5px; border-radius: 50%; background: #e6c681; color: var(--deep-green); }
+.plant-category { margin-top: 42px; }
+.category-heading { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.category-heading h2 { font-size: 1.8rem; margin: 0; }
+.category-heading span { color: var(--muted); font-size: .88rem; }
+.plant-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.plant-card { background: white; border: 1px solid #e7ebe3; border-radius: 20px; overflow: hidden; box-shadow: 0 8px 24px #183d2210; transition: transform .2s ease, box-shadow .2s ease; }
+.plant-card:hover { transform: translateY(-4px); box-shadow: 0 14px 28px #183d2217; }
+.plant-card > img { display: block; width: 100%; height: 205px; object-fit: cover; background: #e4e9df; }
+.plant-card-body { padding: 18px; }
+.plant-category-label { color: #6c896d; font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 700; margin: 0 0 7px; }
+.plant-card h3 { margin: 0 0 8px; font-size: 1.15rem; }
+.plant-description { min-height: 44px; color: var(--muted); font-size: .88rem; line-height: 1.5; margin: 0 0 18px; }
+.plant-card-bottom { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.plant-card-bottom strong { font-size: 1.1rem; }
+.plant-card-bottom button { border: 0; border-radius: 999px; background: var(--green); color: white; padding: 10px 13px; font-size: .83rem; font-weight: 700; }
+.plant-card-bottom button:disabled { background: #dfe8dc; color: #56715a; cursor: default; }
+@media (max-width: 900px) { .plant-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .plant-grid { grid-template-columns: 1fr; } .plant-card > img { height: 230px; } .plant-description { min-height: auto; } }
